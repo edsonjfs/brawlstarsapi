@@ -15,7 +15,7 @@ import java.util.List;
 public interface MapsGateway{
 
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     MapResponse getAllMaps();
 
 }
