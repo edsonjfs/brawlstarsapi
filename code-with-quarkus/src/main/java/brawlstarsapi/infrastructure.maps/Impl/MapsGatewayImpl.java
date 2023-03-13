@@ -3,7 +3,7 @@ package brawlstarsapi.infrastructure.maps.Impl;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
-import brawlstarsapi.infrastructure.maps.gateways.MapsGateway;
+import brawlstarsapi.infrastructure.maps.gateways.MembersGateway;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 import org.jboss.logging.Logger;
 
@@ -12,10 +12,10 @@ import org.jboss.logging.Logger;
 public class MapsGatewayImpl {
     private static final Logger LOG = Logger.getLogger(MapsGatewayImpl.class);
 
-    private final MapsGateway mapGateway;
+    private final MembersGateway mapGateway;
 
     @Inject
-    public MapsGatewayImpl(@RestClient MapsGateway mapGateway) {
+    public MapsGatewayImpl(@RestClient MembersGateway mapGateway) {
         this.mapGateway = mapGateway;
     }
 }
