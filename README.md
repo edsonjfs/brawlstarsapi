@@ -1,4 +1,4 @@
-# API Brawl Stars em Quarkus, Vue e MongoDB que consome a API oficial da Supercell com a finaliade e admnitrar clubes
+# API Brawl Stars em Quarkus, Vue e MongoDB que consome a API oficial da Supercell com a finaliade e administrar clubes
 
 Deve-se instalar o Mongo e Java para utilizar a API. 
 
