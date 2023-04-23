@@ -15,12 +15,12 @@ import javax.ws.rs.core.Response;
 
 @Path("/members")
 @Produces(MediaType.APPLICATION_JSON)
-public class GreetingResource {
+public class MembersResource {
 
     private final MembersGateway mapsGateway;
 
     @Inject
-    public GreetingResource(@RestClient MembersGateway mapsGateway) {
+    public MembersResource(@RestClient MembersGateway mapsGateway) {
         this.mapsGateway = mapsGateway;
     }
 
@@ -32,7 +32,7 @@ public class GreetingResource {
     public Response members() {
         ClubMembersResponse clubMembersResponse = new ClubMembersResponse();
         try {
-            clubMembersResponse = mapsGateway.getClubMembers("#28V2RCJVV", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImVhMjEzMjZlLTU3ZGUtNDBmYS05MmQ4LTRiOWVmYzIzYTNmZCIsImlhdCI6MTY3ODcyNDM3OCwic3ViIjoiZGV2ZWxvcGVyLzViMDNjNDM3LTVmZDctMjM0NS0yMDcxLTI2YWZlNjU3MGNmNyIsInNjb3BlcyI6WyJicmF3bHN0YXJzIl0sImxpbWl0cyI6W3sidGllciI6ImRldmVsb3Blci9zaWx2ZXIiLCJ0eXBlIjoidGhyb3R0bGluZyJ9LHsiY2lkcnMiOlsiMTc3LjguNTQuMTciXSwidHlwZSI6ImNsaWVudCJ9XX0.g-p5JR9REDUf9Cw9IlMGVPdWOmA1A7z2LeYWLlRrcyj3QlGkXlcaAmEPE9zs9oS2AqIhfJ5N_LOoJbs4azyWsA");
+            clubMembersResponse = mapsGateway.getClubMembers("#28V2RCJVV", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjQ4NjkwNWRmLTQxYTctNDk4NS1iOTg0LWNjOGNkZWRjMTA4NiIsImlhdCI6MTY4MTc0Njc0Niwic3ViIjoiZGV2ZWxvcGVyLzViMDNjNDM3LTVmZDctMjM0NS0yMDcxLTI2YWZlNjU3MGNmNyIsInNjb3BlcyI6WyJicmF3bHN0YXJzIl0sImxpbWl0cyI6W3sidGllciI6ImRldmVsb3Blci9zaWx2ZXIiLCJ0eXBlIjoidGhyb3R0bGluZyJ9LHsiY2lkcnMiOlsiMTc3LjguNTQuMTE3Il0sInR5cGUiOiJjbGllbnQifV19.xA8aBx-BmpZ4zDHalim2QXcsqFUod51BUqIH2tNq_hkC6wjfiJlZ1YpVsGmu0fSlAXEJ1W0w8mp0rjNOr7F0xg");
             membersCommand.addMembers(clubMembersResponse);
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -53,16 +53,5 @@ public class GreetingResource {
         }
 //        System.out.println(mapResponse.getList().get(0).toString());
         return Response.ok().entity(clubMembersResponse).build();
-    }
-
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    @Path("test")
-    public Response test() {
-        Person person = new Person();
-        person.setAge(27);
-        person.setName("Dado");
-
-        return Response.ok(person).build();
     }
 }
