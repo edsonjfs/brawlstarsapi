@@ -1,7 +1,7 @@
 <template>
   <div> 
     <ul v-if="showTable">
-      <li v-for="member in membersList" :key="member.tag"> {{ member.name }}</li>
+      <li v-for="member in membersList" :key="member.tag" class="lista"> {{ member.name }}</li>
     </ul>
   </div>
 </template>
@@ -33,4 +33,11 @@ export default {
   }
 }
 </script>
+
+<style>
+
+.lista{
+  color: blue;
+}
+</style>
 

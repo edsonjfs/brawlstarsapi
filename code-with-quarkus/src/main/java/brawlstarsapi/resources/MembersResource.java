@@ -1,9 +1,8 @@
-package org.acme;
+package  brawlstarsapi.infrastructure.maps.resources;
 
 import brawlstarsapi.infrastructure.maps.command.MembersCommand;
 import brawlstarsapi.infrastructure.maps.domain.ClubMembersResponse;
 import brawlstarsapi.infrastructure.maps.gateways.MembersGateway;
-import org.acme.entities.Person;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 
 import javax.inject.Inject;
