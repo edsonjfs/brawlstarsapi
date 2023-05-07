@@ -7,5 +7,9 @@
 <script>
 export default {
     name: 'ClubAdministration',
+
+    mounted() {
+        console.log('#####');
+    },
 }
 </script>

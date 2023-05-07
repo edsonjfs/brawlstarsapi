@@ -6,6 +6,8 @@
     
     <p> <router-link to="/clubs">Administração de Clubes</router-link> </p>
 
+    <div @click="testeChamada"> Teste </div>
+
   </div>
 </template>
 
@@ -37,7 +39,16 @@ export default {
       .catch(error => {
         console.log(error);
       })
-  }
+  },
+  methods: {
+    testeChamada() {
+     console.log('botao 2');
+     window.location.assign('/clubs')
+     //this.$router.push('/clubs').then(() => {console.log('then router')}).catch(() => { console.log('catch router') });
+     console.log('botao 2 - fim');
+    },
+
+  },
 }
 </script>
 

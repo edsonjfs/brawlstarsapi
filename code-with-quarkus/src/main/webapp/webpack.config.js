@@ -7,6 +7,7 @@ module.exports = {
   mode: 'development',
   entry: {
       home: resolve('src/main.js'),
+      clubs: resolve('src/clubs.js'),
   },
   output: {
     filename: 'js/[name].[hash].bundle.js',
@@ -26,5 +27,10 @@ module.exports = {
         chunks: ['home'],
         filename: path.resolve(__dirname, '../resources/META-INF/resources/index.html'),
     }),
+    new HtmlWebpackPlugin({
+      template: 'src/view/clubs.html',
+      chunks: ['clubs'],
+      filename: path.resolve(__dirname, '../resources/META-INF/resources/clubs.html'),
+  })
   ]
 };
