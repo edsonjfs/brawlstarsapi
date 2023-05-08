@@ -1,8 +1,8 @@
-package  brawlstarsapi.infrastructure.maps.resources;
+package  brawlstarsapi.resources;
 
-import brawlstarsapi.infrastructure.maps.command.MembersCommand;
-import brawlstarsapi.infrastructure.maps.domain.ClubMembersResponse;
-import brawlstarsapi.infrastructure.maps.gateways.MembersGateway;
+import brawlstarsapi.command.MembersCommand;
+import brawlstarsapi.domain.ClubMembersResponse;
+import brawlstarsapi.infrastructure.members.gateways.MembersGateway;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 
 import javax.inject.Inject;

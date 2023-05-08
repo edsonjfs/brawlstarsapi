@@ -1,4 +1,4 @@
-package brawlstarsapi.infrastructure.maps.domain;
+package brawlstarsapi.domain;
 
 public class Paging {
     private String cursors;

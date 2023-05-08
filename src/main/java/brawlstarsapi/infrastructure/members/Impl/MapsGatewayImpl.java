@@ -1,9 +1,9 @@
-package brawlstarsapi.infrastructure.maps.Impl;
+package brawlstarsapi.infrastructure.members.Impl;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
-import brawlstarsapi.infrastructure.maps.gateways.MembersGateway;
+import brawlstarsapi.infrastructure.members.gateways.MembersGateway;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 import org.jboss.logging.Logger;
 

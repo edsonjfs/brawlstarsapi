@@ -1,6 +1,6 @@
-package brawlstarsapi.infrastructure.maps.gateways;
+package brawlstarsapi.infrastructure.members.gateways;
 
-import brawlstarsapi.infrastructure.maps.command.MembersCommand;
+import brawlstarsapi.command.MembersCommand;
 import com.mongodb.client.MongoCollection;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;

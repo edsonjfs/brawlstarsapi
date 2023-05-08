@@ -1,8 +1,8 @@
-package brawlstarsapi.infrastructure.maps.command;
+package brawlstarsapi.command;
 
-import brawlstarsapi.infrastructure.maps.domain.ClubMembersResponse;
-import brawlstarsapi.infrastructure.maps.gateways.MembersFilesGateway;
-import brawlstarsapi.infrastructure.maps.gateways.MembersMongoGateway;
+import brawlstarsapi.domain.ClubMembersResponse;
+import brawlstarsapi.infrastructure.members.gateways.MembersFilesGateway;
+import brawlstarsapi.infrastructure.members.gateways.MembersMongoGateway;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;

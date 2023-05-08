@@ -1,7 +1,7 @@
-package brawlstarsapi.infrastructure.maps.gateways;
+package brawlstarsapi.infrastructure.members.gateways;
 
 
-import brawlstarsapi.infrastructure.maps.domain.ClubMembersResponse;
+import brawlstarsapi.domain.ClubMembersResponse;
 import org.eclipse.microprofile.rest.client.annotation.RegisterClientHeaders;
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 

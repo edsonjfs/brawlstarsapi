@@ -1,11 +1,11 @@
-package brawlstarsapi.infrastructure.maps.gateways;
+package brawlstarsapi.infrastructure.members.gateways;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 
 
-import brawlstarsapi.infrastructure.maps.domain.ClubMembersResponse;
-import brawlstarsapi.infrastructure.maps.domain.Member;
+import brawlstarsapi.domain.ClubMembersResponse;
+import brawlstarsapi.domain.Member;
 
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoClient;

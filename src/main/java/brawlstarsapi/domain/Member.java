@@ -1,4 +1,6 @@
-package brawlstarsapi.infrastructure.maps.domain;
+package brawlstarsapi.domain;
+
+import brawlstarsapi.domain.Icon;
 
 public class Member {
     private String tag;
@@ -6,7 +8,8 @@ public class Member {
     private String nameColor;
     private String role;
     private int trophies;
-    private Icon icon;
+
+    private  Icon icon;
 
     public Member (){
     }
