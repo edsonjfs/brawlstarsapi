@@ -1,10 +1,11 @@
 <template>
     <div>
-        Administração de Clubes
+        <p>Adm de Clubes</p>
     </div>
 </template>
 
 <script>
+
 export default {
     name: 'ClubAdministration',
 }
