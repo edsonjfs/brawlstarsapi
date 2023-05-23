@@ -8,6 +8,7 @@ module.exports = {
   entry: {
       home: resolve('src/main.js'),
       clubs: resolve('src/clubs.js'),
+      front: resolve('src/front.js'),
   },
   output: {
     filename: 'js/[name].[hash].bundle.js',
@@ -31,6 +32,11 @@ module.exports = {
       template: 'src/view/clubs.html',
       chunks: ['clubs'],
       filename: path.resolve(__dirname, '../resources/META-INF/resources/clubs.html'),
-  })
+  }),
+  new HtmlWebpackPlugin({
+    template: 'src/view/front.html',
+    chunks: ['front'],
+    filename: path.resolve(__dirname, '../resources/META-INF/resources/front.html'),
+}),
   ]
 };
